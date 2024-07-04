@@ -1,0 +1,120 @@
+{
+  "blue_map": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "water"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count",
+          "dimension": "time"
+        }
+      }
+    ]
+  },
+  "green_map": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "vegetation"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count",
+          "dimension": "time"
+        }
+      }
+    ]
+  },
+  "blue_curve": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "water"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count",
+          "dimension": "space"
+        }
+      }
+    ]
+  },
+  "green_curve": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "vegetation"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count",
+          "dimension": "space"
+        }
+      }
+    ]
+  },
+  "blue_stat": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "water"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count"
+        }
+      }
+    ]
+  },
+  "green_stat": {
+    "type": "processing_chain",
+    "with": {
+      "type": "concept",
+      "reference": [
+        "entity",
+        "vegetation"
+      ]
+    },
+    "do": [
+      {
+        "type": "verb",
+        "name": "reduce",
+        "params": {
+          "reducer": "count"
+        }
+      }
+    ]
+  }
+}
